@@ -7,7 +7,7 @@
 Array adalah struktur data yang terdiri dari kumpulan elemen yang memiliki jenis data yang sama, yang disusun dalam urutan tertentu dan diidentifikasi oleh indeks atau nomor posisi. Dasar-dasar teori array meliputi konsep deklarasi, inisialisasi, akses elemen, ukuran array, operasi pada array, serta penggunaan indeks negatif dan multidimensi. Saat dideklarasikan, array memerlukan spesifikasi tipe data elemen dan ukuran array. Elemen-elemen array dapat diinisialisasi dengan nilai awal dan diakses menggunakan indeksnya, dimulai dari 0 hingga (jumlah_elemen - 1). Array mendukung berbagai operasi seperti penambahan, pengurangan, pencarian, penyisipan, dan penghapusan. Beberapa bahasa pemrograman mendukung indeks negatif untuk mengakses elemen dari akhir array, dan array multidimensi juga digunakan untuk menyimpan data dalam struktur yang lebih kompleks. Dengan pemahaman yang kuat tentang dasar-dasar teorinya, array menjadi alat yang sangat berguna dalam pengembangan perangkat lunak untuk menyimpan, mengelola, dan memanipulasi data secara efisien.
 
 # Guided
-
+```C++
 1. Program Input Array Tiga Dimensi
 #include <iostream>
 
@@ -49,7 +49,7 @@ for (int x = 0; x << 2; x++)
     cout << endl;
 }
 }
-
+```
       Program tersebut merupakan contoh penggunaan array multidimensi dalam bahasa C++. Array tiga dimensi `arr` dengan ukuran 2x3x3 digunakan untuk menyimpan data. Melalui loop, program mengisi array dengan input dari pengguna dan kemudian menampilkannya. Loop pertama untuk mengatur lapisan utama, loop kedua untuk baris, dan loop ketiga untuk kolom. Setelah array terisi, program menampilkan isi array tanpa permintaan input lagi. Dengan demikian, program memungkinkan pengguna untuk menginputkan dan melihat data dalam array multidimensi secara efisien.
 
 Guided
