@@ -1,4 +1,4 @@
-Laporan Praktikum Modul ARRAY
+## Laporan Praktikum Modul ARRAY
 Karika Pringgo Hutomo
 
 Dasar Teori
