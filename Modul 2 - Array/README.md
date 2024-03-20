@@ -94,6 +94,7 @@ Terakhir, program menampilkan nilai maksimum yang ditemukan beserta lokasi indek
 
 Unguided
 1. [Soal]
+``` C++
 #include <iostream>
 
 using namespace std;
@@ -155,6 +156,7 @@ int main() {
 
     return 0;
 }
+```
 
 Output> 
 "C:\Users\MSI GF63\Pictures\Screenshots\Screenshot 2024-03-20 113032.png"
@@ -163,6 +165,7 @@ Output>
 Program tersebut meminta pengguna untuk memasukkan sejumlah angka dan menyimpannya dalam sebuah array. Selanjutnya, program memisahkan angka-angka genap dan ganjil ke dalam dua array terpisah, `evenNumbers` dan `oddNumbers`. Setelah pemisahan, program menampilkan seluruh data array, angka-angka genap, dan ganjil kepada pengguna. Ini dilakukan dengan loop `for` untuk setiap array, serta penambahan tanda koma dan spasi sesuai kebutuhan. Program kemudian mengakhiri eksekusi.
 
 2. [Soal]
+``` C++
 #include <iostream>
 
 using namespace std;
@@ -217,12 +220,13 @@ int main() {
 
     return 0;
 }
-
+```
 Output:
 image
 Program tersebut meminta pengguna untuk memasukkan ukuran elemen dari array tiga dimensi, lalu mendeklarasikan array sesuai dengan ukuran yang dimasukkan. Selanjutnya, program meminta pengguna untuk mengisi array dengan elemen-elemennya. Setelah array terisi, program menampilkan seluruh elemen array beserta indeksnya, dan kemudian menampilkan array secara visual. Terakhir, program mengakhiri eksekusi setelah menampilkan array. Ini memberikan kontrol penuh kepada pengguna untuk menentukan ukuran dan isi array tiga dimensi.
 
 3. [Soal]
+``` C++
 #include <iostream>
 
 using namespace std;
@@ -289,15 +293,15 @@ int main() {
 
     return 0;
 }
-
+```
 
 Output:
 image
 
 Program tersebut meminta pengguna untuk memasukkan jumlah elemen array dan elemen-elemennya. Setelah itu, program meminta pengguna untuk memilih operasi yang ingin dilakukan: mencari nilai maksimum, minimum, atau rata-rata dari elemen-elemen array. Program menggunakan struktur kontrol switch untuk menentukan operasi yang akan dilakukan sesuai dengan pilihan pengguna, dan kemudian menampilkan hasilnya ke layar. Program mengakhiri eksekusi setelah selesai melakukan operasi sesuai dengan pilihan pengguna.
 
-Kesimpulan
-Tipe data primitif, abstrak, dan koleksi adalah konsep fundamental dalam pemrograman komputer. Tipe data primitif, seperti integer, float, char, dan boolean, menyediakan representasi dasar untuk nilai-nilai seperti angka, karakter, dan logika. Mereka memiliki ukuran dan perilaku yang telah ditentukan oleh bahasa pemrograman yang digunakan. Di sisi lain, tipe data abstrak, seperti list, stack, queue, dan tree, adalah konsep yang mengabstraksi representasi data dari implementasi fisiknya. Mereka memungkinkan pemrogram untuk berinteraksi dengan data secara konseptual, tanpa perlu memperhatikan detail teknis bagaimana data tersebut disimpan. Sedangkan, koleksi adalah struktur data yang digunakan untuk menyimpan kumpulan nilai atau objek. Mereka bisa berupa tipe data primitif atau tipe data abstrak lainnya, dan menyediakan cara yang efisien untuk mengelola dan memanipulasi data dalam program. Pemahaman konsep-konsep ini penting dalam pengembangan perangkat lunak, karena membantu dalam pemilihan struktur data yang tepat dan penggunaan yang efisien untuk menyelesaikan berbagai masalah komputasi.
+# Kesimpulan
+Array merupakan struktur data yang memungkinkan penyimpanan sejumlah elemen dengan tipe data yang sama dalam satu variabel. Array satu dimensi adalah kumpulan elemen dalam urutan linear, yang berguna untuk menyimpan data dalam urutan tunggal seperti daftar nama atau nilai-nilai suatu data. Dalam array dua dimensi, atau matriks, elemen-elemennya disusun dalam baris dan kolom, cocok untuk menyimpan data dalam struktur tabel atau matriks seperti data piksel dalam gambar. Sementara itu, array multidimensi memiliki tiga dimensi atau lebih, yang berguna untuk menyimpan data dengan struktur yang lebih kompleks seperti data volume atau video. Array empat dimensi, sebagai contoh, dapat digunakan dalam aplikasi yang melibatkan ruang-waktu atau simulasi fisika yang kompleks. Sedangkan array lima dimensi, yang lebih lanjut memperluas dimensi, digunakan dalam konteks aplikasi ilmiah atau teknis yang memerlukan struktur data berdimensi tinggi, seperti pemodelan matematis yang kompleks atau penelitian ilmiah yang membutuhkan representasi data yang sangat besar. Dengan memahami berbagai jenis array dan penggunaannya, programmer dapat mengelola data secara efisien dan efektif dalam pengembangan perangkat lunak.
 
-Referensi
-[1] Muhammad taufik dwi putra, Deden predeka, dan Ana rahma yuniarti, Belajar Dasar Pemrograman dengan C++.Bandung:WIDANA,2022.
+# Referensi
+[1] https://www.w3schools.com/js/js_arrays.asp
