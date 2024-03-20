@@ -53,6 +53,7 @@ for (int x = 0; x << 2; x++)
       Program tersebut merupakan contoh penggunaan array multidimensi dalam bahasa C++. Array tiga dimensi `arr` dengan ukuran 2x3x3 digunakan untuk menyimpan data. Melalui loop, program mengisi array dengan input dari pengguna dan kemudian menampilkannya. Loop pertama untuk mengatur lapisan utama, loop kedua untuk baris, dan loop ketiga untuk kolom. Setelah array terisi, program menampilkan isi array tanpa permintaan input lagi. Dengan demikian, program memungkinkan pengguna untuk menginputkan dan melihat data dalam array multidimensi secara efisien.
 
 Guided
+``` C++
 2. Program Mencari Nilai Maksimal pada Array
 #include <iostream>
 
@@ -81,6 +82,8 @@ int main()
     }
     cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << lokasi << endl;
 }
+```
+
 Program di atas adalah contoh program sederhana dalam bahasa C++ yang bertujuan untuk menemukan nilai maksimum dalam sebuah array yang diisi oleh pengguna. 
 
 Pertama-tama, program meminta pengguna untuk memasukkan panjang array yang diinginkan, kemudian mendeklarasikan array dengan ukuran sesuai dengan input pengguna. Selanjutnya, program meminta pengguna untuk memasukkan angka-angka yang akan disimpan dalam array.
