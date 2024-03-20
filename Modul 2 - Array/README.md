@@ -158,7 +158,7 @@ int main() {
 
 Output> 
 "C:\Users\MSI GF63\Pictures\Screenshots\Screenshot 2024-03-20 113032.png"
-image
+
 
 Program tersebut meminta pengguna untuk memasukkan sejumlah angka dan menyimpannya dalam sebuah array. Selanjutnya, program memisahkan angka-angka genap dan ganjil ke dalam dua array terpisah, `evenNumbers` dan `oddNumbers`. Setelah pemisahan, program menampilkan seluruh data array, angka-angka genap, dan ganjil kepada pengguna. Ini dilakukan dengan loop `for` untuk setiap array, serta penambahan tanda koma dan spasi sesuai kebutuhan. Program kemudian mengakhiri eksekusi.
 
