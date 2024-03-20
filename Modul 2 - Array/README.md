@@ -159,7 +159,7 @@ int main() {
 ```
 
 Output> 
-"C:\Users\MSI GF63\Pictures\Screenshots\Screenshot 2024-03-20 113032.png"
+> ![Screenshot 2024-03-20 113032](https://private-user-images.githubusercontent.com/162521019/314389801-5081312f-3755-4564-a4bb-1d5b92149010.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5MTM2NDgsIm5iZiI6MTcxMDkxMzM0OCwicGF0aCI6Ii8xNjI1MjEwMTkvMzE0Mzg5ODAxLTUwODEzMTJmLTM3NTUtNDU2NC1hNGJiLTFkNWI5MjE0OTAxMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQwNTQyMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYzU2NDg4ZTFjYTY0ZmMzZDdhNDM2YjQ4ZTY0YTA1ZDJkZjA1N2IwMzZlNGU3ZjYwNTJkZDE5MzI0MzdmZjkxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.OA0nUCchpZ_Q5D7pjQNjixB_Rb8CE761GqMUAt9CxjU)
 
 
 Program tersebut meminta pengguna untuk memasukkan sejumlah angka dan menyimpannya dalam sebuah array. Selanjutnya, program memisahkan angka-angka genap dan ganjil ke dalam dua array terpisah, `evenNumbers` dan `oddNumbers`. Setelah pemisahan, program menampilkan seluruh data array, angka-angka genap, dan ganjil kepada pengguna. Ini dilakukan dengan loop `for` untuk setiap array, serta penambahan tanda koma dan spasi sesuai kebutuhan. Program kemudian mengakhiri eksekusi.
