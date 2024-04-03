@@ -669,9 +669,8 @@ int main()
     return 0;
 }
 ```
+Dalam program ini, digunakan struct Node yang memiliki dua bagian: data dan pointer ke Node berikutnya. Terdapat fungsi-fungsi untuk melakukan operasi-operasi dasar pada linked list, seperti pengecekan apakah linked list kosong, penambahan elemen di depan, di belakang, atau di tengah linked list, penghapusan elemen di depan, di belakang, atau di tengah linked list, penghapusan seluruh isi linked list, dan menampilkan isi linked list
 
-Program ini mendefinisikan struktur Node yang memiliki dua atribut: data dan pointer ke node berikutnya. Kemudian, program menyediakan fungsi-fungsi untuk operasi dasar pada linked list, seperti penambahan dan penghapusan elemen di depan, di belakang, dan di tengah linked list. 
-Di dalam fungsi main(), serangkaian operasi tersebut dijalankan untuk menguji fungsi-fungsi tersebut. Misalnya, menambahkan elemen di depan dan di belakang, menghapus elemen di depan dan di belakang, serta menambahkan dan menghapus elemen di tengah. Setiap kali ada perubahan pada linked list, isi linked list ditampilkan.
 
 
 ## Unguided 
@@ -1071,15 +1070,14 @@ int main() {
 
 #### j) Tampilkan seluruh data
 
-Program di atas merupakan implementasi dari linked list circular. Kelas *LinkedListCircular* memiliki beberapa fungsi untuk operasi-operasi dasar pada linked list, seperti menambah, mengubah, dan menghapus data mahasiswa, serta menampilkan seluruh data mahasiswa. Setiap operasi tersebut dapat dilakukan di depan, di belakang, atau di tengah linked list.
-Di dalam *main()*, program menyediakan menu untuk pengguna agar dapat memilih operasi yang ingin dilakukan, seperti menambah, mengubah, atau menghapus data mahasiswa, serta menampilkan seluruh data mahasiswa. Pengguna dapat memilih menu sesuai kebutuhan, dan program akan menjalankan operasi yang dipilih. Selama program berjalan, data mahasiswa disimpan dalam linked list circular, yang artinya elemen terakhir terhubung kembali ke elemen pertama, membentuk lingkaran. Hal ini memungkinkan untuk melakukan traversing dari awal ke akhir linked list secara terus menerus.
+Dalam program ini, terdapat struktur data Student yang memiliki atribut name dan id, serta pointer next yang menunjuk ke node berikutnya. Kelas CircularLinkedList memiliki method-method untuk melakukan operasi-operasi pada linked list, seperti penambahan data mahasiswa di depan, belakang, atau tengah, modifikasi data mahasiswa, serta penghapusan data mahasiswa.
+
+Fungsi main bertanggung jawab untuk menampilkan menu kepada pengguna dan memanggil method-method dari kelas CircularLinkedList sesuai dengan pilihan pengguna. Pengguna dapat memilih untuk menambahkan, mengubah, menghapus, atau menampilkan data mahasiswa, serta keluar dari program.
+
+Dengan demikian, program ini menyediakan kerangka kerja untuk manajemen data mahasiswa menggunakan circular linked list dan interaksi dengan pengguna melalui menu yang disediakan.
 
 ## Kesimpulan
-Linked list circular melingkar adalah varian dari struktur data linked list yang memiliki sifat khusus di mana elemen terakhir terhubung kembali ke elemen pertama, membentuk sebuah lingkaran. Hal ini berbeda dengan linked list biasa yang memiliki elemen terakhir yang menunjuk ke NULL. Linked list circular memiliki keunggulan utama yaitu kemampuannya untuk melakukan traversing dari awal ke akhir linked list secara terus menerus tanpa harus kembali ke elemen pertama. Hal ini memungkinkan pengolahan data yang lebih efisien dalam beberapa kasus penggunaan, terutama ketika diperlukan akses berulang terhadap seluruh elemen dalam linked list. Linked list circular juga memiliki kemiripan dengan linked list ganda (double linked list) dalam hal sifat melingkar. Namun, linked list circular hanya memiliki satu pointer next untuk setiap elemen, sementara linked list ganda memiliki dua pointer (next dan prev) yang menghubungkan setiap elemen dengan elemen sebelum dan sesudahnya. Meskipun demikian, linked list circular juga memiliki kelemahan, seperti kompleksitas dalam penanganan kasus khusus, seperti menemukan elemen terakhir atau melakukan operasi pada elemen terakhir. Selain itu, kesalahan dalam implementasi operasi tambah dan hapus elemen dapat mengakibatkan terjadinya looping tak terbatas. Dengan demikian, penggunaan linked list circular melingkar harus dipertimbangkan dengan cermat sesuai dengan kebutuhan aplikasi dan karakteristik data yang diolah. Kelebihan dan kelemahan dari struktur data ini perlu dipahami dengan baik agar dapat memanfaatkannya secara efektif dalam pengembangan perangkat lunak.
 
 ## Referensi
-[1] "Pengantar Daftar Tertaut Melingkar" GeeksforGeeks, 2023.
-https://www.geeksforgeeks.org/circular-linked-list/
-
-[2] "Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya" Trivusi. 2022
-https://www.trivusi.web.id/2022/07/struktur-data-linked-list.html
+[1] 
+[2] 
