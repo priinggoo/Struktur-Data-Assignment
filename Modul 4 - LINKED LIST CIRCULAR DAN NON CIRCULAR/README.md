@@ -1132,6 +1132,8 @@ Linked list circular adalah salah satu struktur data yang fleksibel dan serbagun
 
 ## Referensi
 [1] Wikipedia - Circular linked list: https://en.wikipedia.org/wiki/Circular_linked_list
+
 [2] GeeksForGeeks - Circular Linked List: https://www.geeksforgeeks.org/circular-linked-list/
+
 [3]Programiz - Circular Linked List: https://www.programiz.com/dsa/circular-linked-list
 
