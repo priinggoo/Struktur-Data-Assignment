@@ -28,14 +28,144 @@ Dalam sintesis, dasar teori algoritma searching meliputi penggunaan algoritma li
 
 # Guided 1
 ```C++
+//KARTIKA PRINGGO HUTOMO
+//2311102196
 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  // Jumlah data
+  int n = 10;
+
+  // Data yang akan dicari
+  int data[n] = {9, 4, 1, 7, 5, 12, 4, 13, 4, 10};
+  int cari = 10;
+  int i;
+  // Variabel untuk menandakan apakah data ditemukan
+  bool ditemukan = false;
+
+  // Algoritma Sequential Search
+  for (i = 0; i < n; i++) {
+    if (data[i] == cari) {
+      ditemukan = true;
+      break;
+    }
+  }
+
+  // Menampilkan hasil pencarian
+  cout << "\t Program Sequential Search Sederhana\n" << endl;
+  cout << "Data: {9, 4, 1, 7, 5, 12, 4, 13, 4, 10}" << endl;
+
+  if (ditemukan) {
+    cout << "\nAngka " << cari << " ditemukan pada indeks ke-" << i << endl;
+  } else {
+    cout << cari << " tidak dapat ditemukan pada data." << endl;
+  }
+
+  return 0;
+}
 ```
+> ![Screenshot 2024-05-21 144939](https://private-user-images.githubusercontent.com/162521019/332336675-23c282f2-7283-495f-ac8e-53b09d3e68c1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYyNzg4MjEsIm5iZiI6MTcxNjI3ODUyMSwicGF0aCI6Ii8xNjI1MjEwMTkvMzMyMzM2Njc1LTIzYzI4MmYyLTcyODMtNDk1Zi1hYzhlLTUzYjA5ZDNlNjhjMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMVQwODAyMDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kODE5ZmU2N2NjZDQwNjMxMDc5ZjQwMGE3OTNmNzY2YWRiMjk4YWMwZDBkNDNiNTMyMjU1YWYzNzFhNDRhYWYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ABia8DSO6YZZG-fUh9RoFzSh8nhr-YzsI_yz9m5_YNA)
+
+
+
+Program di atas adalah implementasi dari algoritma sequential search dalam bahasa C++. Program ini dimulai dengan mendeklarasikan variabel `n` yang berisi jumlah elemen dalam array, yaitu 10. Array `data` berisi sepuluh bilangan bulat, dan variabel `cari` berisi nilai 10 yang akan dicari dalam array. Variabel `ditemukan` digunakan sebagai penanda apakah nilai yang dicari ditemukan dalam array atau tidak. Algoritma sequential search dilakukan dengan melakukan iterasi melalui setiap elemen dalam array `data` dan memeriksa apakah elemen tersebut sama dengan nilai yang dicari. Jika nilai ditemukan, variabel `ditemukan` diatur menjadi `true` dan loop berhenti. Setelah pencarian selesai, program menampilkan pesan hasil pencarian. Jika nilai ditemukan, program mencetak indeks di mana nilai tersebut ditemukan. Jika tidak, program mencetak pesan bahwa nilai tidak ditemukan dalam data. Program ini menunjukkan cara sederhana untuk mencari nilai dalam array menggunakan algoritma sequential search.
+
      
 Guided 2
 ``` C++
+//KARTIKA ORINGGO HUTOMO 
+//2311102196
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+// Deklarasi array dan variabel untuk pencarian
+int arrayData[7] = {1, 8, 2, 5, 4, 9, 7};
+int cari;
+
+// Fungsi selection sort untuk mengurutkan array
+void selectionSort(int arr[], int n) {
+    int temp, minIndex;
+
+    for (int i = 0; i < n - 1; i++) {
+        minIndex = i;
+
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+
+        // Tukar elemen
+        temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+}
+
+// Fungsi binary search untuk mencari data dalam array yang telah diurutkan
+void binarySearch(int arr[], int n, int target) {
+    int start = 0, end = n - 1, middle, found = 0;
+
+    while (start <= end && found == 0) {
+        middle = (start + end) / 2;
+
+        if (arr[middle] == target) {
+            found = 1;
+        } else if (arr[middle] < target) {
+            start = middle + 1;
+        } else {
+            end = middle - 1;
+        }
+    }
+
+    if (found == 1) {
+        cout << "\nData ditemukan pada indeks ke-" << middle << endl;
+    } else {
+        cout << "\nData tidak ditemukan\n";
+    }
+}
+
+int main() {
+    cout << "\tBINARY SEARCH" << endl;
+
+    cout << "\nData awal: ";
+    // Menampilkan data awal
+    for (int i = 0; i < 7; i++) {
+        cout << setw(3) << arrayData[i];
+    }
+    cout << endl;
+
+    cout << "\nMasukkan data yang ingin Anda cari: ";
+    cin >> cari;
+
+    // Mengurutkan data dengan selection sort
+    selectionSort(arrayData, 7);
+
+    cout << "\nData diurutkan: ";
+    // Menampilkan data setelah diurutkan
+    for (int i = 0; i < 7; i++) {
+        cout << setw(3) << arrayData[i];
+    }
+    cout << endl;
+
+    // Melakukan binary search
+    binarySearch(arrayData, 7, cari);
+
+  return 0;
+}
 
 ```
+> ![Screenshot 2024-05-21 145546](https://private-user-images.githubusercontent.com/162521019/332336980-5312d5b2-d9d1-4644-b472-74689198f26c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYyNzg4NjgsIm5iZiI6MTcxNjI3ODU2OCwicGF0aCI6Ii8xNjI1MjEwMTkvMzMyMzM2OTgwLTUzMTJkNWIyLWQ5ZDEtNDY0NC1iNDcyLTc0Njg5MTk4ZjI2Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTIxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyMVQwODAyNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZTVmODJlZjVmMjg0MjBmM2U4YzMyYTVmNDdiYjhiM2JlZmI4NTdlM2RhNThhMzFkNWFkYTU5MTJmZWY1NzNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.vodJShJeiDjNi7KbuNhEwM2vuNKUyr5iev-FWs5jV10)
 
+
+
+Program ini mengimplementasikan algoritma selection sort dan binary search dalam bahasa C++. Pertama, program mendeklarasikan sebuah array berisi tujuh bilangan bulat dan sebuah variabel untuk menyimpan nilai yang akan dicari oleh pengguna. Fungsi `selectionSort` mengurutkan array dengan mencari elemen terkecil dalam bagian yang belum terurut dan menukarnya dengan elemen pertama dari bagian tersebut, berulang hingga seluruh array terurut. Setelah itu, fungsi `binarySearch` mencari nilai dalam array yang telah diurutkan dengan memeriksa elemen tengah dan menyesuaikan jangkauan pencarian hingga nilai ditemukan atau jangkauan habis. Pada fungsi `main`, program menampilkan array awal, meminta pengguna memasukkan nilai yang dicari, mengurutkan array menggunakan `selectionSort`, menampilkan array yang sudah diurutkan, lalu mencari nilai tersebut menggunakan `binarySearch` dan menampilkan hasil pencarian. Program ini menunjukkan cara mengurutkan dan mencari nilai dalam array menggunakan algoritma dasar selection sort dan binary search.
 
 Unguided
 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang
